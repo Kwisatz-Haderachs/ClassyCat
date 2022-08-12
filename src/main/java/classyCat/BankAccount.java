@@ -1,26 +1,43 @@
 package classyCat;
 
-public class BankAccount {
-    private double balance;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+
+public class BankAccount extends Account {
+    private float balance;
+
+    public BankAccount(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.creationDate = LocalDateTime.now();
+        this.balance = 0.00f;
+    }
+
+    public void deposit(float amount) {
+        balance += amount;
+    }
+
+    private float withdrawl(float amount) {
+        boolean status = checkBalance(amount);
+        if (status == true) {
+            balance -= amount;
+            return balance;
+        } else {
+            // msg
+            return balance;
+        }
+    }
+
+    public float getBalance() {
+        return balance;
+    }
+
+    public boolean checkBalance(float amount) {
+        float temp = balance - amount;
+        if (temp < 0) {
+            return false;
+        }
+        return true;
+    }
 
 }
-//    long cents;
-//    long balance;
-//
-//    long getBalance(){
-//        return balance;
-//    }
-//
-//    void withdraw(long cents){
-//        this.balance -= cents;
-//    }
-//    void deposit(long cents){
-//        this.balance += cents;
-//    }
-//
-//    boolean isOverDrawn(){
-//        if (balance < 0.0){
-//            return true;
-//        }
-//        return false;
-//    }
