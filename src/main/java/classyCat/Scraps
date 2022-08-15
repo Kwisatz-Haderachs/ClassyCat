@@ -1,0 +1,23 @@
+
+@Test
+public void bankAccountExist(){
+    //instantiate a new bankAccount()
+    //assert myObject is a bankAccount
+    //assert that the balance is zero
+}
+
+
+
+public ArrayList<String> sortArray(String[] inputArray) {
+    ArrayList<String> arr = new ArrayList<>(Arrays.asList(inputArray));
+    arr.sort(null);
+    return arr;
+}
+
+
+public HashMap<Integer, String> genHashMap() {
+     HashMap<Integer, String> hm = new HashMap<>();
+     hm.put(747, "Airplane");
+     hm.put(10, "Laphroaig");
+     return hm;
+ }

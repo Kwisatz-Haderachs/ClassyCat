@@ -7,6 +7,8 @@ public class BankAccount extends Account {
     private double balance;
     private boolean overdrawn;
     private int accountDurationMonths;
+    private String firstName;
+    private String lastName;
 
     public BankAccount(String firstName, String lastName) {
         this(firstName, lastName, 0.00);
@@ -33,7 +35,9 @@ public class BankAccount extends Account {
     }
 
     public double monthlyInterest(){
-        return ((this.balance*0.1) + this.balance);
+        double interest = this.balance*0.1;
+        balance += interest;
+        return balance;
     }
 
 
@@ -44,6 +48,28 @@ public class BankAccount extends Account {
             return true;
         }
         return false;
+    }
+
+    public String getFirstName(){
+        return this.firstName;
+    }
+    public String getLastName(){
+        return this.lastName;
+    }
+
+    public void setFirstName(String name){
+        this.firstName = name;
+    }
+
+    public int getAccountDurationMonths(){
+        return this.accountDurationMonths;
+    }
+    public void setAccountDurationMonths(int months){
+        this.accountDurationMonths = months;
+    }
+
+    public void setLastName(String name){
+        this.lastName = name;
     }
 
     public boolean getOverdrawn(){
@@ -61,11 +87,5 @@ public class BankAccount extends Account {
 
 }
 
-/*
-@Test
-public void bankAccountExist(){
-    //instantiate a new bankAccount()
-    //assert myObject is a bankAccount
-    //assert that the balance is zero
-}
- */
+
+
