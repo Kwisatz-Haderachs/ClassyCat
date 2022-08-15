@@ -18,10 +18,9 @@ public class BankAccount extends Account {
     }
 
     public float withdrawl(float amount) {
-        boolean status = checkBalance(amount);
-        if (status == true) {
-            balance -= amount;
-            return balance;
+        boolean status = isOverdrawn(amount);
+        if (status == false) {
+            return (balance -= amount);
         } else {
             // msg
             return balance;
@@ -36,12 +35,8 @@ public class BankAccount extends Account {
         // check date, add monthly interest
     }
 
-    public boolean checkBalance(float amount) {
-        float temp = balance - amount;
-        if (temp < 0) {
-            return false;
-        }
-        return true;
+    public boolean isOverdrawn(float amount) {
+        return  (balance - amount) < 0;
     }
 
     @Override
