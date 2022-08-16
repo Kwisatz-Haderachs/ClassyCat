@@ -14,6 +14,7 @@ public ArrayList<String> sortArray(String[] inputArray) {
     return arr;
 }
 
+array.forEach(System.out::println);
 
 public HashMap<Integer, String> genHashMap() {
      HashMap<Integer, String> hm = new HashMap<>();
@@ -21,3 +22,14 @@ public HashMap<Integer, String> genHashMap() {
      hm.put(10, "Laphroaig");
      return hm;
  }
+
+for(Map.Entry<String, String> inst : inst.entrySet()){
+   //for each for HashMap
+   String key = inst.getKey();
+   String val = inst.getValue();
+}
+//alt format
+inst.forEach((String key, String value) -> {
+    // do something
+});
+

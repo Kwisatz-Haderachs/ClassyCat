@@ -22,20 +22,20 @@ public class BankAccount extends Account {
     }
 
     public void deposit(double amount) {
-        this.balance += amount;
+        balance += amount;
     }
 
     public double withdrawl(double amount) {
-        boolean status = isOverdrawn(amount);
-        return (this.balance -= amount);
+        isOverdrawn(amount);
+        return (balance -= amount);
     }
 
     public double getBalance() {
-        return this.balance;
+        return balance;
     }
 
     public double monthlyInterest(){
-        double interest = this.balance*0.1;
+        double interest = balance*0.1;
         balance += interest;
         return balance;
     }
@@ -43,18 +43,18 @@ public class BankAccount extends Account {
 
 
     public boolean isOverdrawn(double amount) {
-        if ((this.balance - amount) < 0){
-            this.overdrawn = true;
+        if ((balance - amount) < 0){
+            overdrawn = true;
             return true;
         }
         return false;
     }
 
     public String getFirstName(){
-        return this.firstName;
+        return firstName;
     }
     public String getLastName(){
-        return this.lastName;
+        return lastName;
     }
 
     public void setFirstName(String name){
@@ -62,7 +62,7 @@ public class BankAccount extends Account {
     }
 
     public int getAccountDurationMonths(){
-        return this.accountDurationMonths;
+        return accountDurationMonths;
     }
     public void setAccountDurationMonths(int months){
         this.accountDurationMonths = months;
@@ -73,7 +73,7 @@ public class BankAccount extends Account {
     }
 
     public boolean getOverdrawn(){
-        return this.overdrawn;
+        return overdrawn;
     }
 
     @Override
@@ -82,7 +82,7 @@ public class BankAccount extends Account {
                 """
                         Account Holder: %s %s
                         Account Balance: %f
-                        """, this.firstName, this.lastName, this.balance);
+                        """, firstName, lastName, balance);
     }
 
 }
