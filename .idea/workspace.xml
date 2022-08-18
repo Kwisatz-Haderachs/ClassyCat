@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="878e2ad0-724d-43f5-8034-9df3d1b52df1" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classyCat/BankAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classyCat/BankAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classyCat/CreditAccount.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classyCat/CreditAccount.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/classyCat/Scraps" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/classyCat/Scraps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/classyCat/testCredit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/classyCat/testCredit.java" afterDir="false" />
-    </list>
+    <list default="true" id="878e2ad0-724d-43f5-8034-9df3d1b52df1" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,15 +46,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/f2268397/Documents/Projects/ClassyCat",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="JUnit.testCredit">
     <configuration name="All in classyCat.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="classyCat.test" />
